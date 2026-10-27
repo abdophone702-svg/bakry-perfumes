@@ -3,8 +3,19 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>بكري | BAKRY — Eau de Parfum</title>
-<meta name="description" content="كتالوج عطور بكري BAKRY — عطور فاخرة بحجم 50 مل. اطلب مباشرة عبر واتساب.">
+<title>Bakry Perfumes | بكري للعطور — عطور فاخرة 50 مل</title>
+<meta name="description" content="Bakry Perfumes — بكري للعطور: كتالوج عطور فاخرة بحجم 50 مل. اطلب مباشرة عبر واتساب.">
+<meta name="keywords" content="Bakry Perfumes, بكري للعطور, عطور بكري, BAKRY, عطور 50 مل, عطور مصر">
+<link rel="canonical" href="https://abdophone702-svg.github.io/bakry-perfumes/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bakry Perfumes | بكري للعطور">
+<meta property="og:description" content="عطور فاخرة بحجم 50 مل. اطلب مباشرة عبر واتساب.">
+<meta property="og:url" content="https://abdophone702-svg.github.io/bakry-perfumes/">
+<meta property="og:image" content="https://abdophone702-svg.github.io/bakry-perfumes/IMG_1539.jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Bakry Perfumes","alternateName":["بكري للعطور","BAKRY"],"url":"https://abdophone702-svg.github.io/bakry-perfumes/","image":"https://abdophone702-svg.github.io/bakry-perfumes/IMG_1539.jpeg"}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
@@ -32,9 +43,9 @@
 
 <!-- ===== HERO ===== -->
 <header class="bg-bk-900 text-white text-center px-6 py-16 sm:py-24">
-  <img src="images/bakry-2.jpg" alt="" class="hidden">
-  <h1 class="brand text-5xl sm:text-7xl font-semibold" dir="ltr">BAKRY</h1>
-  <p class="mt-2 text-bk-100/70 font-en text-lg tracking-widest" dir="ltr">EAU DE PARFUM</p>
+  <h1 class="brand text-5xl sm:text-7xl font-semibold" dir="ltr">BAKRY<span class="sr-only"> Perfumes — بكري للعطور</span></h1>
+  <p class="mt-2 text-bk-100/70 font-en text-lg tracking-widest" dir="ltr">PERFUMES</p>
+  <p class="mt-1 text-bk-100/60 text-sm">بكري للعطور</p>
   <div class="mx-auto my-6 h-px w-16 bg-bk-500"></div>
   <p class="max-w-xl mx-auto text-bk-100 leading-loose">
     عطور مختارة بعناية، بتركيزات عالية وثبات يدوم طول اليوم، في زجاجات أنيقة بحجم 50 مل.
@@ -56,6 +67,7 @@
 
 <footer class="bg-bk-900 text-bk-100/80 text-center py-10 px-4 text-sm">
   <p class="brand text-2xl text-white" dir="ltr">BAKRY</p>
+  <p class="text-xs text-bk-100/50 mt-1">Bakry Perfumes — بكري للعطور</p>
   <p class="mt-3">للطلب والاستفسار تواصل معنا عبر واتساب</p>
   <p class="mt-6 text-bk-100/40">© <span id="year"></span> BAKRY</p>
 </footer>
@@ -70,30 +82,30 @@ const SETTINGS = {
   size: "50 مل"
 };
 
-/* الصور: ضع صورك في فولدر images/ واكتب اسم الملف في الحقل image
+/* الصور: ارفع صورك في نفس مكان index.html واكتب اسم الملف في الحقل image
    لو سبت image فاضي هتظهر صورة افتراضية.
    price: اكتب السعر كرقم. لو 0 هيظهر "اسأل عن السعر". */
 const PRODUCTS = [
-  { name:"انفيكتوس إكسير", en:"Invictus Elixir — Paco Rabanne", notes:"انتعاشة حارة على قاعدة خشبية عنبرية قوية", price:0, image:"images/bakry-1.jpg" },
-  { name:"مارشميلو", en:"Marshmallow", notes:"حلوى ناعمة بفانيليا وبودرة ومسك دافئ", price:0, image:"images/bakry-2.jpg" },
-  { name:"ليتون", en:"Layton — Parfums de Marly", notes:"تفاح وخزامى مع فانيليا وخشب، أنيق ومميز", price:0, image:"images/bakry-3.jpg" },
-  { name:"عود مداوي", en:"Oud Mudawi", notes:"عود دافئ وغني بلمسة عنبر وبخور", price:0, image:"images/bakry-4.jpg" },
-  { name:"بلو دو شانيل", en:"Bleu de Chanel", notes:"حمضيات منعشة مع خشب وعنبر، كلاسيكي رسمي", price:0, image:"images/bakry-1.jpg" },
-  { name:"خمرة", en:"Khamrah — Lattafa", notes:"قرفة وتمر وفانيليا، حلو دافئ للشتاء", price:0, image:"images/bakry-2.jpg" },
-  { name:"يارا كاندي", en:"Yara Candy — Lattafa", notes:"فواكه حلوة وفانيليا ومسك، خفيف وأنثوي", price:0, image:"images/bakry-3.jpg" },
-  { name:"ألكسندريا 2", en:"Alexandria II — Xerjoff", notes:"عود وخشب أرز مع لمسة ورد، فخم وثابت", price:0, image:"images/bakry-4.jpg" },
-  { name:"تباكو فانيليا", en:"Tobacco Vanille — Tom Ford", notes:"تبغ وفانيليا وتوابل، دافئ وعميق", price:0, image:"images/bakry-1.jpg" },
-  { name:"عود كلمات", en:"Kalemat Oud — Arabian Oud", notes:"عود وعنبر وورد، شرقي كلاسيكي", price:0, image:"images/bakry-2.jpg" },
-  { name:"فيرساتشي إيروس", en:"Versace Eros", notes:"نعناع وتفاح أخضر مع تونكا وفانيليا", price:0, image:"images/bakry-3.jpg" },
-  { name:"بربري هير", en:"Burberry Her", notes:"توت وفواكه حمراء مع مسك، مرح وجذاب", price:0, image:"images/bakry-4.jpg" },
-  { name:"لومال لو بارفان", en:"Le Male Le Parfum — Jean Paul Gaultier", notes:"هيل ولافندر وفانيليا، حسّي وثابت", price:0, image:"images/bakry-1.jpg" },
-  { name:"لومال إكسير", en:"Le Male Elixir — Jean Paul Gaultier", notes:"لافندر ونعناع وعسل وتونكا، حلو ودافئ", price:0, image:"images/bakry-2.jpg" },
-  { name:"بكارات روج 540", en:"Baccarat Rouge 540 — MFK", notes:"زعفران وياسمين وعنبر، فوّاح ولامع", price:0, image:"images/bakry-3.jpg" },
-  { name:"ديور سوفاج", en:"Dior Sauvage", notes:"برغموت وفلفل وعنبر، منعش وقوي", price:0, image:"images/bakry-4.jpg" },
-  { name:"واحة العطور", en:"Wahat", notes:"تركيبة شرقية منعشة بروح الواحة", price:0, image:"images/bakry-1.jpg" },
-  { name:"عود بوكيه", en:"Oud Bouquet — Lancôme", notes:"عود مع باقة ورد، ناعم وفاخر", price:0, image:"images/bakry-2.jpg" },
-  { name:"لاكوست وايت", en:"Lacoste Eau de Blanc", notes:"حمضيات وخشب نظيف، انتعاش يومي", price:0, image:"images/bakry-3.jpg" },
-  { name:"ألتهاير", en:"Althair — Parfums de Marly", notes:"هيل وقرفة وفانيليا وخشب، حلو راقي", price:0, image:"images/bakry-4.jpg" }
+  { name:"انفيكتوس إكسير", en:"Invictus Elixir — Paco Rabanne", notes:"انتعاشة حارة على قاعدة خشبية عنبرية قوية", price:0, image:"IMG_6251.jpeg" },
+  { name:"مارشميلو", en:"Marshmallow", notes:"حلوى ناعمة بفانيليا وبودرة ومسك دافئ", price:0, image:"IMG_1539.jpeg" },
+  { name:"ليتون", en:"Layton — Parfums de Marly", notes:"تفاح وخزامى مع فانيليا وخشب، أنيق ومميز", price:0, image:"IMG_6611.jpeg" },
+  { name:"عود مداوي", en:"Oud Mudawi", notes:"عود دافئ وغني بلمسة عنبر وبخور", price:0, image:"IMG_6791.jpeg" },
+  { name:"بلو دو شانيل", en:"Bleu de Chanel", notes:"حمضيات منعشة مع خشب وعنبر، كلاسيكي رسمي", price:0, image:"IMG_6251.jpeg" },
+  { name:"خمرة", en:"Khamrah — Lattafa", notes:"قرفة وتمر وفانيليا، حلو دافئ للشتاء", price:0, image:"IMG_1539.jpeg" },
+  { name:"يارا كاندي", en:"Yara Candy — Lattafa", notes:"فواكه حلوة وفانيليا ومسك، خفيف وأنثوي", price:0, image:"IMG_6611.jpeg" },
+  { name:"ألكسندريا 2", en:"Alexandria II — Xerjoff", notes:"عود وخشب أرز مع لمسة ورد، فخم وثابت", price:0, image:"IMG_6791.jpeg" },
+  { name:"تباكو فانيليا", en:"Tobacco Vanille — Tom Ford", notes:"تبغ وفانيليا وتوابل، دافئ وعميق", price:0, image:"IMG_6251.jpeg" },
+  { name:"عود كلمات", en:"Kalemat Oud — Arabian Oud", notes:"عود وعنبر وورد، شرقي كلاسيكي", price:0, image:"IMG_1539.jpeg" },
+  { name:"فيرساتشي إيروس", en:"Versace Eros", notes:"نعناع وتفاح أخضر مع تونكا وفانيليا", price:0, image:"IMG_6611.jpeg" },
+  { name:"بربري هير", en:"Burberry Her", notes:"توت وفواكه حمراء مع مسك، مرح وجذاب", price:0, image:"IMG_6791.jpeg" },
+  { name:"لومال لو بارفان", en:"Le Male Le Parfum — Jean Paul Gaultier", notes:"هيل ولافندر وفانيليا، حسّي وثابت", price:0, image:"IMG_6251.jpeg" },
+  { name:"لومال إكسير", en:"Le Male Elixir — Jean Paul Gaultier", notes:"لافندر ونعناع وعسل وتونكا، حلو ودافئ", price:0, image:"IMG_1539.jpeg" },
+  { name:"بكارات روج 540", en:"Baccarat Rouge 540 — MFK", notes:"زعفران وياسمين وعنبر، فوّاح ولامع", price:0, image:"IMG_6611.jpeg" },
+  { name:"ديور سوفاج", en:"Dior Sauvage", notes:"برغموت وفلفل وعنبر، منعش وقوي", price:0, image:"IMG_6791.jpeg" },
+  { name:"واحة العطور", en:"Wahat", notes:"تركيبة شرقية منعشة بروح الواحة", price:0, image:"IMG_6251.jpeg" },
+  { name:"عود بوكيه", en:"Oud Bouquet — Lancôme", notes:"عود مع باقة ورد، ناعم وفاخر", price:0, image:"IMG_1539.jpeg" },
+  { name:"لاكوست وايت", en:"Lacoste Eau de Blanc", notes:"حمضيات وخشب نظيف، انتعاش يومي", price:0, image:"IMG_6611.jpeg" },
+  { name:"ألتهاير", en:"Althair — Parfums de Marly", notes:"هيل وقرفة وفانيليا وخشب، حلو راقي", price:0, image:"IMG_6791.jpeg" }
 ];
 /* ===================== نهاية الإعدادات ===================== */
 
